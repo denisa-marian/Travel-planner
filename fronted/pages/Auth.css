@@ -1,0 +1,121 @@
+.auth-page {
+  min-height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.auth-card {
+  width: 520px;
+  max-width: 100%;
+  background: linear-gradient(180deg, var(--water), var(--water-2));
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+  padding: 20px 20px 18px;
+  border: 1px solid rgba(47, 65, 86, 0.12);
+}
+
+.auth-card h1 {
+  margin: 0 0 14px;
+  font-size: 34px;
+  font-weight: 1000;
+  color: var(--navy);
+}
+
+.auth-form {
+  display: grid;
+  gap: 14px;
+}
+
+.auth-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.auth-field {
+  display: grid;
+  gap: 6px;
+}
+
+.auth-field label {
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.auth-field input {
+  border: 1px solid rgba(47, 65, 86, 0.2);
+  border-radius: 14px;
+  padding: 14px 12px;
+  font-size: 16px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--navy);
+}
+
+.auth-field input:focus {
+  border-color: var(--primary-700);
+  box-shadow: 0 0 0 3px rgba(63, 135, 181, 0.25);
+}
+
+.auth-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: rgba(47, 65, 86, 0.85);
+}
+
+.auth-check input {
+  width: 18px;
+  height: 18px;
+}
+
+.auth-error {
+  background: #fff1f2;
+  color: #be123c;
+  border: 1px solid #fecdd3;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-weight: 800;
+}
+
+.auth-btn {
+  border: 0;
+  border-radius: 16px;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 1000;
+  color: var(--on-primary);
+  cursor: pointer;
+  background: linear-gradient(90deg, var(--primary-700), var(--primary-800));
+  margin-top: 6px;
+}
+
+.auth-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.auth-footer {
+  text-align: center;
+  color: rgba(47, 65, 86, 0.75);
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.auth-footer a {
+  color: var(--primary-800);
+  font-weight: 1000;
+  text-decoration: none;
+}
+
+@media (max-width: 560px) {
+  .auth-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-card h1 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,146 @@
+.rm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(47, 65, 86, 0.55);
+  display: grid;
+  place-items: center;
+  z-index: 9999;
+  padding: 16px;
+}
+
+.rm-modal {
+  width: 520px;
+  max-width: 100%;
+  background: linear-gradient(180deg, var(--water), var(--water-2));
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 18px;
+}
+
+.rm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.rm-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 1000;
+}
+
+.rm-subtitle {
+  margin: 4px 0 0;
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+.rm-close {
+  border: 0;
+  background: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.rm-excursion {
+  display: flex;
+  gap: 12px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 14px;
+  padding: 12px;
+  margin: 14px 0;
+}
+
+.rm-exc-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: var(--primary-700);
+  color: var(--on-primary);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+}
+
+.rm-exc-name {
+  font-weight: 900;
+}
+
+.rm-exc-meta {
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+.rm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.rm-field {
+  display: grid;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.rm-field label {
+  font-size: 13px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.rm-field input,
+.rm-field select {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(47,65,86,0.2);
+  background: #fff;
+}
+
+.rm-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px 0;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.rm-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.rm-primary {
+  border: 0;
+  border-radius: 14px;
+  padding: 14px;
+  font-weight: 1000;
+  background: linear-gradient(90deg, var(--primary-700), var(--primary-800));
+  color: var(--on-primary);
+  cursor: pointer;
+}
+
+.rm-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.rm-secondary {
+  border-radius: 14px;
+  padding: 14px;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(47,65,86,0.2);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+@media (max-width: 520px) {
+  .rm-grid {
+    grid-template-columns: 1fr;
+  }
+}

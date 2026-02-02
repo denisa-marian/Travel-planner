@@ -1,0 +1,21 @@
+.admin-guard {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.admin-guard h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.admin-guard-box {
+  background: linear-gradient(180deg, var(--water), var(--water-2));
+  border: 1px solid rgba(47, 65, 86, 0.12);
+  border-radius: 18px;
+  padding: 26px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--navy);
+}

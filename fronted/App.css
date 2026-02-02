@@ -1,0 +1,6 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--water), var(--water-2));
+  display: flex;
+  flex-direction: column;
+}
